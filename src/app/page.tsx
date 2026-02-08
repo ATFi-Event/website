@@ -103,6 +103,7 @@ export default function Home() {
             <Link href="#features" className="text-zinc-400 hover:text-white transition-colors">Features</Link>
             <Link href="#how-it-works" className="text-zinc-400 hover:text-white transition-colors">How It Works</Link>
             <Link href="https://github.com/ATFi-Event" target="_blank" className="text-zinc-400 hover:text-white transition-colors">GitHub</Link>
+            <Link href="https://atfi-tooling.gitbook.io/atfi-tooling-docs/" target="_blank" className="text-zinc-400 hover:text-white transition-colors">Docs</Link>
             <Link href="https://www.npmjs.com/package/atfi" target="_blank" className="text-zinc-400 hover:text-white transition-colors">SDK</Link>
           </div>
           <Link
@@ -327,6 +328,7 @@ export default function Home() {
           <ATFiLogoWithText />
           <div className="flex items-center gap-6 text-zinc-400">
             <Link href="https://github.com/ATFi-Event" target="_blank" className="hover:text-white transition-colors">GitHub</Link>
+            <Link href="https://atfi-tooling.gitbook.io/atfi-tooling-docs/" target="_blank" className="hover:text-white transition-colors">Docs</Link>
             <Link href="https://www.npmjs.com/package/atfi" target="_blank" className="hover:text-white transition-colors">NPM</Link>
             <Link href="https://demo-dapp.useatfi.xyz" target="_blank" className="hover:text-white transition-colors">Demo</Link>
           </div>
