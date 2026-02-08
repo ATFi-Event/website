@@ -100,10 +100,12 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-8">
             <Link href="#features" className="text-zinc-400 hover:text-white transition-colors">Features</Link>
             <Link href="#how-it-works" className="text-zinc-400 hover:text-white transition-colors">How It Works</Link>
-            <Link href="https://github.com/atfi-protocol" className="text-zinc-400 hover:text-white transition-colors">GitHub</Link>
+            <Link href="https://github.com/ATFi-Event" target="_blank" className="text-zinc-400 hover:text-white transition-colors">GitHub</Link>
+            <Link href="https://www.npmjs.com/package/atfi" target="_blank" className="text-zinc-400 hover:text-white transition-colors">SDK</Link>
           </div>
           <Link
-            href="https://app.atfi.xyz"
+            href="https://demo-dapp.useatfi.xyz"
+            target="_blank"
             className="px-5 py-2.5 bg-blue-500 hover:bg-blue-600 rounded-full font-medium transition-colors"
           >
             Launch App
@@ -134,18 +136,37 @@ export default function Home() {
               
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
                 <Link
-                  href="https://app.atfi.xyz"
+                  href="https://demo-dapp.useatfi.xyz"
+                  target="_blank"
                   className="w-full sm:w-auto px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold text-lg flex items-center justify-center gap-2 transition-all hover:scale-105 glow-blue"
                 >
                   Get Started
                   <ArrowRightIcon className="w-5 h-5" />
                 </Link>
                 <Link
-                  href="https://docs.atfi.xyz"
+                  href="https://www.npmjs.com/package/atfi"
+                  target="_blank"
                   className="w-full sm:w-auto px-8 py-4 border border-zinc-700 hover:border-zinc-500 rounded-full font-semibold text-lg transition-colors"
                 >
-                  Read Docs
+                  View SDK
                 </Link>
+              </div>
+              
+              {/* NPM Install Command */}
+              <div className="mt-6 flex justify-center lg:justify-start">
+                <div className="inline-flex items-center gap-3 px-5 py-3 bg-zinc-900/80 border border-zinc-700 rounded-xl font-mono text-sm">
+                  <span className="text-zinc-500">$</span>
+                  <code className="text-zinc-300">npm install atfi</code>
+                  <button 
+                    className="ml-2 p-1.5 hover:bg-zinc-700 rounded-lg transition-colors text-zinc-500 hover:text-zinc-300"
+                    onClick={() => navigator.clipboard.writeText('npm install atfi')}
+                    title="Copy to clipboard"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               
               {/* Stats */}
@@ -286,7 +307,8 @@ export default function Home() {
                 Join the future of accountability. Create your first commitment-backed event today.
               </p>
               <Link
-                href="https://app.atfi.xyz"
+                href="https://demo-dapp.useatfi.xyz"
+                target="_blank"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-blue-500 hover:bg-blue-600 rounded-full font-semibold text-lg transition-all hover:scale-105 glow-blue"
               >
                 Launch App
@@ -302,9 +324,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <ATFiLogoWithText />
           <div className="flex items-center gap-6 text-zinc-400">
-            <Link href="https://github.com/atfi-protocol" className="hover:text-white transition-colors">GitHub</Link>
-            <Link href="https://docs.atfi.xyz" className="hover:text-white transition-colors">Docs</Link>
-            <Link href="https://twitter.com/atfi_protocol" className="hover:text-white transition-colors">Twitter</Link>
+            <Link href="https://github.com/ATFi-Event" target="_blank" className="hover:text-white transition-colors">GitHub</Link>
+            <Link href="https://www.npmjs.com/package/atfi" target="_blank" className="hover:text-white transition-colors">NPM</Link>
+            <Link href="https://demo-dapp.useatfi.xyz" target="_blank" className="hover:text-white transition-colors">Demo</Link>
           </div>
           <p className="text-zinc-500 text-sm">
             © 2026 ATFi Protocol. Built on Base.
