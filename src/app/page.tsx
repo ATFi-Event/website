@@ -1,3 +1,5 @@
+"use client";
+
 import { ATFiLogo, ATFiLogoWithText } from "@/components/Logo";
 import Link from "next/link";
 
